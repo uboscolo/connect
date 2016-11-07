@@ -1,0 +1,40 @@
+Create a connection class in Python
+
+Summary:
+
+This class provides the user with methods to connect, reconnect, disconnect and send commands to a remote ip address via either ssh or telnet, by reading some parameters such as ip addresses, usernames and passwords from a input text file in yaml format
+
+Methods:
+
+- connect
+- reconnect
+- disconnect
+- send_command
+- set_prompt
+- add_prompt
+
+Input file format:
+
+devices:
+    <device_name>:
+        ip_address: <IP ADDRESS>
+        username: <USERNAME>
+        password: <password>
+        prompt: <prompt>
+        protocol: <SSH OR TELNET>
+        options:
+            <OPTION_1>: <VAL_1>
+
+Implementation details:
+
+- 1 class to parse the input file and return paramaters is needed
+- connection cass should either extend or reference pexpect 
+- Unit test for all the public methods 
+- PEP 8 compliant, 0 pylint errors or warnings 
+
+Unit test strategy
+- a subfolder called test should be associated for all the classes
+- python unitest can be used to write the unittest, and either unitest or 
+  nosetest use to check pass/fail rate and coverage, aim is 100% pass 
+  and 100% coverage
+
