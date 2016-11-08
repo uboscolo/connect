@@ -4,6 +4,8 @@ Summary:
 
 This class provides the user with methods to connect, reconnect, disconnect and send commands to a remote ip address via either ssh or telnet, by reading some parameters such as ip addresses, usernames and passwords from a input text file in yaml format
 
+# I made this change for the purpose of testing reviews
+
 Methods:
 
 - connect
